@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reservation Hotel Room</h1>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Personal Data:</legend>
+            <label for="name">Name:</label><br/>
+            <input type="text" id="name" name="name"/><br/><br/>
+            <label for="gender">Gender:</label><br/>
+            <input type="text" id="gender" name="gender"/><br/><br/>
+            <label for="email">Email:</label><br/>
+            <input type="email" id="email" name="email"/><br/><br/>
+            <label for="telepon">Telp Number:</label><br/>
+            <input type="tel" id="telepon" name="telepon"/><br/><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Reservation Room Form</legend>
+            <label for="rname">Reservation Name:</label><br/>
+            <input type="text" id="rname" name="rname"/><br/><br/>
+            <label for="book">Booking Date:</label><br/>
+            <input type="date" id="book" name="book"/><br/><br/>
+            <label for="rtype">Room Type:</label><br/>
+            <td>
+                <select>
+                    <option>Deluxe</option>
+                    <option>Suit</option>
+                    <option>Regular</option>
+                </select><br/><br/>
+            </td>
+            <label for="btype">Bed Type:</label><br/>
+            <td>
+                <select>
+                    <option>King Size</option>
+                    <option>Single</option>
+                    <option>Double</option>
+                </select><br/><br/>
+            </td>
+            <label for="breakfast">Breakfast:</label><br/>
+            <input type="checkbox" id="wbreakfast" name="wbreakfast"/>
+            <label for="wbreakfast">With Breakfast</label>
+            <input type="checkbox" id="breakfast" name="breakfast"/>
+            <label for="breakfast">Without Breakfast</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment</legend>
+            <label for="cidate">Check-in Date:</label><br/>
+            <input type="date" id="cidate" name="cidate"/><br/><br/>
+            <label for="codate">Check-out Date:</label><br/>
+            <input type="date" id="codate" name="codate"/><br/><br/>
+            <label for="rtype">Payment Method:</label><br/>
+            <td>
+                <select>
+                    <option>debit</option>
+                    <option>cash</option>
+                </select><br/><br/>
+            </td>
+        </fieldset>
+        <br/>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="submit" name="submit" value="Submit" />
+            </td>
+        </tr>
+    </form>
+</body>
+</html>
